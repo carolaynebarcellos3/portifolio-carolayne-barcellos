@@ -68,11 +68,11 @@ header > nav > ul > li > a:hover {
     color: var(--pink)
 }
 
-header > nav > ul > li > a.active {
+header > nav > ul > li > a.active-page {
     color: var(--pink);
 }
 
-header > nav > ul > li > a.active:hover {
+header > nav > ul > li > a.active-page:hover {
     text-decoration: none;
 }
 
