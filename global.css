@@ -69,7 +69,7 @@ header > nav > ul > li > a:hover {
 }
 
 .active-page {
-    color: var(--pink);
+    color: var(--pink) !important;
 }
 
 header > nav > ul > li > a.active-page:hover {
