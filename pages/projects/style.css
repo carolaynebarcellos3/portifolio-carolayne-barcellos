@@ -39,7 +39,7 @@
 
 .overlay-btn:hover {
     background-color: #C30073;
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Projeto content ao lado do iframe */
