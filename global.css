@@ -72,8 +72,8 @@ header > nav > ul > li > a:hover {
     color: var(--pink);
 }
 
-.active:hover {
-    text-decoration: none !important;
+.active-page:hover {
+    text-decoration: none;
 }
 
 /* Main */
