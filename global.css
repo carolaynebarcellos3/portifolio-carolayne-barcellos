@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Global */
+
+:root{
+    --white: #ECF0F3;
+    --light-gray: #D3D3D3;
+    --pink: #DD007F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+}
+
+html, body{
+    background-color: var(--white);
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--pink)
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 32px;
+}
+
+header .logo {
+    width: 70px;
+    height: 70px;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+}
+
+header > nav > ul > li:not(:last-of-type) > a::after {
+    content: " | ";
+    color: var(--white);
+}
+
+.active-page {
+    color: var(--pink);
+}
+
+.active:hover {
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About me */
+
+.about-me {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin: 0 32px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--light-gray);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-left: 4px solid var(--pink);
+    padding-left: 20px;
+}
+
+.about-content h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #000;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+}
+
+footer .social-img {
+    width: 40px;
+    height: 40px;
+}

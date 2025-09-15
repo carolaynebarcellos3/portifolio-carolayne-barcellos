@@ -1,0 +1,37 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.experience-item {
+    background: #fff;
+    border-left: 4px solid var(--pink);
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.experience-item h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #000;
+}
+
+.experience-date {
+    font-size: 14px;
+    color: gray;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
