@@ -73,7 +73,7 @@ header > nav > ul > li > a:hover {
 }
 
 .active:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Main */
