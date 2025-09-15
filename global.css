@@ -36,11 +36,6 @@ a{
     font-weight: 700;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: var(--pink)
-}
-
 /* Header */
 
 header {
@@ -66,6 +61,11 @@ header > nav > ul {
 header > nav > ul > li:not(:last-of-type) > a::after {
     content: " | ";
     color: var(--white);
+}
+
+header > nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: var(--pink)
 }
 
 .active-page {
