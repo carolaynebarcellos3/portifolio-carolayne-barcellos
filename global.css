@@ -148,6 +148,11 @@ footer > nav > ul {
     list-style-type: none;
 }
 
+footer .social-img {
+    width: 40px;
+    height: 40px;
+}
+
 /* Tablets */
 @media (max-width: 900px) {
     .about-me {
@@ -195,9 +200,4 @@ footer > nav > ul {
         width: 32px;
         height: 32px;
     }
-}
-
-footer .social-img {
-    width: 40px;
-    height: 40px;
 }
