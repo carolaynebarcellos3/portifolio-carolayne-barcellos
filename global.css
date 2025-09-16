@@ -150,12 +150,6 @@ footer > nav > ul {
 
 /* Tablets */
 @media (max-width: 900px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
-    }
-
     .about-me {
         flex-direction: column;
         text-align: center;
@@ -170,6 +164,16 @@ footer > nav > ul {
 
 /* Celulares */
 @media (max-width: 600px) {
+    header > nav > ul {
+        flex-direction: column; /* menu em coluna no celular */
+        align-items: center;
+        gap: 8px;
+    }
+
+    header > nav > ul > li:not(:last-of-type) > a::after {
+        content: ""; /* remove a barra vertical em telas pequenas */
+    }
+    
     main {
         padding: 16px;
     }
