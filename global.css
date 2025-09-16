@@ -148,6 +148,51 @@ footer > nav > ul {
     list-style-type: none;
 }
 
+/* Tablets */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .about-content {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    main {
+        padding: 16px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-content h1 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    footer .social-img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 footer .social-img {
     width: 40px;
     height: 40px;
