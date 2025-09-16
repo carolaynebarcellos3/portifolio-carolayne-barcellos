@@ -180,20 +180,57 @@ footer .social-img {
 
 /* Celulares */
 @media (max-width: 600px) {
+    header > nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
     .menu-toggle {
         display: block;
+        align-self: flex-start;
     }
 
     header > nav > ul {
         display: none;
         flex-direction: column;
-        gap: 12px;
-        margin-top: 12px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
         text-align: center;
+        background-color: #111; 
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateY(-10px);
     }
 
     header > nav > ul.active {
         display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    header > nav > ul > li > a {
+        display: block;
+        padding: 10px;
+        border-radius: 6px;
+        color: var(--white);
+        background: transparent;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    header > nav > ul > li > a:hover {
+        background-color: var(--pink);
+        color: #fff;
+    }
+
+    header > nav > ul > li:not(:last-of-type) > a::after {
+        content: "";
     }
     
     main {
